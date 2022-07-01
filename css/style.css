@@ -11,6 +11,7 @@
 }
 html{
     scroll-behavior: smooth;/*para deslizar de manera suave*/
+    background-color:#C3C0B3;
 }
 header{
     width: 100%;
@@ -85,10 +86,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .container_cover .text{
     max-width: 400px;
     margin-left: 420px;
+    margin: auto;
 }
 .container_cover .text h1{
     font-size: 35px;
@@ -101,7 +104,7 @@ header{
     max-width: 400px;
     color: #fff;
 }
-.container_cover .text input{
+.container_cover .text button {
     padding: 18px 80px;
     border: none;
     font-size: 17px;
@@ -112,6 +115,10 @@ header{
     cursor: pointer;/*para poner la manito asjdsajdk*/
     box-shadow: 1px 1px 30px -12px #C3C0B3;/*sombra sobre el boton*/
     transition: all 350ms; /*transicion para la iluminacion*/
+}
+.container_cover .text button a{
+    text-decoration: none;
+    color: #5d5a5a;
 }
 .container_cover .text input:hover{
     box-shadow: 1px 1px 30px -6px #C3C0B3;/* ilumina al tocar el boton*/
@@ -225,4 +232,68 @@ header{
 }
 .map{
     margin-bottom: 300px;
+}
+
+.container_nosotros .h22{
+    margin-left: 825px;
+    padding: 30px;
+}
+.container_nosotros .nosparr{
+    margin-bottom: 500px;
+    margin: auto;
+    margin-bottom: 500px;
+    max-width: 900px;
+}
+ 
+/*Footer*/
+footer{
+    display: block;
+    width: 100%;
+    border-top: 1px solid #eee;
+    position: relative;
+    z-index: 100;
+}
+.container{
+    background: #e9e7e2;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer_top{
+    padding: 40px 0;
+}
+.footer_grid{
+    display: block;
+    width: 100%;
+}
+.footer_menu{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-right: 60px;
+    width: 100%;
+    max-width: 170px;
+    vertical-align: top;
+}
+.footer_grid ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+.footer_grid a{
+    text-decoration: none;
+    color: #9c937c;
+}
+.footer_grid a:hover{
+    color: #5d5a5a;
+}
+.footer_li i{
+    margin-right: 5px;
+}
+.footer_bottom{
+    padding: 30px 0px;
+    text-align: center;
+    background: #5d5a5a;
+}
+
+.footer_bottom p{
+    color: #fff;
 }
